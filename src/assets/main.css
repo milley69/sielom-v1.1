@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: "Nunito Sans", sans-serif;
+  }
+  body {
+    @apply m-0 min-h-screen w-full min-w-[390px] overflow-x-hidden p-0 leading-[120%] text-[#222];
+  }
+}
+
+@layer components {
+  .padding-block {
+    @apply md:py-15 px-0 py-20 sm:py-10;
+  }
+}
+
+@layer utilities {
+  .qwe {
+    border: 1px solid salmon;
+  }
+  .qwe2 > * {
+    border: 1px solid salmon;
+  }
+  .qwe3 * {
+    border: 1px solid salmon;
+  }
+}
